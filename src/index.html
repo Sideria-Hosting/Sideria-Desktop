@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>FalixNodes Desktop</title>
+
+        <meta charset="utf-8">
+
+        <link id="accent-setting" rel="stylesheet" type="text/css" href="./base/css/settings/accent-colors/default.css">
+        <link id="theme-setting" rel="stylesheet" type="text/css" href="./base/css/settings/theme/dark.css">
+        <link id="view-setting" rel="stylesheet" type="text/css" href="./base/css/settings/view/default.css">
+        <link id="language-setting" rel="stylesheet" type="text/css" href="./base/css/settings/language/english.css">
+
+        <link rel="stylesheet" href="./base/css/master/master.css">
+        <link rel="stylesheet" href="./base/css/extra/fonts.css">
+        <link rel="stylesheet" href="./base/css/extra/ninja-keys.css">
+        <link rel="stylesheet" href="./base/fonts/fontawesome-pro-6.0.0-web/css/all.css">
+    </head>
+    <body onload="addComponent()">
+        <ninja-keys class="dark" placeholder="Command Menu" hideBreadcrumbs></ninja-keys>
+        <img src="./base/img/backgrounds/null.png" id="primary-background">
+        <div add-component="./components/modals/navigation.html"></div>
+        <toasts>
+            <toast id="null"></toast>
+            <div add-component="./components/toasts/restart-required.html"></div>
+        </toasts>
+        <div class="modal" id="backdrop"></div>
+        <modal>
+            <div id="null" class="modal"></div>
+
+            <div add-component="./components/modals/command-menu-quick-access/settings-username.html"></div>
+            <div add-component="./components/modals/command-menu-quick-access/settings-background.html"></div>
+
+            <div id="settings" class="modal">
+                <div add-component="./components/modals/settings/sidebar.html"></div>
+                <div id="has-sidebar" class="modal-content">
+                    <div add-component="./components/modals/settings/about.html"></div>
+                    <div add-component="./components/modals/settings/account.html"></div>
+                    <div add-component="./components/modals/settings/language.html"></div>
+                    <div add-component="./components/modals/settings/personalization.html"></div>
+                    <div add-component="./components/modals/settings/troubleshooting.html"></div>
+                </div>
+            </div>
+        </modal>
+        <content>
+            <div add-component="./components/views/dashboard.html"></div>
+            <div id="client-area" class="content">
+                <webview class="full-window" id="web-client-area" src="https://client.falixnodes.net/" preload="./base/js/webview/client.js"></webview>
+            </div>
+            <div id="servers-panel" class="content">
+                <webview class="full-window" id="web-servers-panel" src="https://dev-panel.falixnodes.net/" preload="./base/js/webview/panel.js"></webview>
+            </div>
+            <div id="forums" class="content">
+                <webview class="full-window" id="web-forums" src="https://forum.falixnodes.net/"></webview>
+            </div>
+            <div id="help-center" class="content">
+                <webview class="full-window" id="web-help-center" src="https://falixnodes.net/help/"></webview>
+            </div>
+        </content>
+    </body>
+    <script type="module">import {NinjaKeys} from 'https://unpkg.com/ninja-keys?module';</script>
+
+    <script src="./base/js/command-menu/search.js"></script>
+
+    <script src="./base/js/settings/accent-color.js"></script>
+    <script src="./base/js/settings/blur.js"></script>
+    <script src="./base/js/settings/custom-background.js"></script>
+    <script src="./base/js/settings/language.js"></script>
+    <script src="./base/js/settings/theme.js"></script>
+    <script src="./base/js/settings/view.js"></script>
+
+    <script src="./base/js/extra/add-component.js"></script>
+    <script src="./base/js/extra/controls.js"></script>
+    <script src="./base/js/extra/navigation.js"></script>
+</html>

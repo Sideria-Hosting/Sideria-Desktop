@@ -1,0 +1,6 @@
+.idea
+.parcel-cache
+.sass-cache
+bundle
+dist
+node_modules
