@@ -26,9 +26,11 @@
             </div>
         </div>
         <div class="sidebar-top">
-            <button onclick="toggleDefaultControls(); toTab('dashboard', this, 'var(--accent)');" class="sidebar-tab"><i class="fa-light fa-hexagon"></i> <i18n text="Dashboard"></i18n></button>
-            <button onclick="toggleCAControls(); toTab('client-area', this, 'var(--accent)');" class="sidebar-tab"><i class="fa-light fa-user-crown"></i> <i18n text="Client Area"></i18n></button>
-            <button onclick="toggleSPControls(); toTab('servers-panel', this, 'var(--accent)');" class="sidebar-tab"><i class="fa-light fa-server"></i> <i18n text="Servers Panel"></i18n></button>
+            <button onclick="toggleDefaultControls(); toTab('dashboard', this, 'var(--accent)');" class="sidebar-tab"><i class="fa-solid fa-hexagon"></i> <i18n text="Dashboard"></i18n></button>
+            <button onclick="toggleCAControls(); toTab('client-area', this, 'var(--accent)');" class="sidebar-tab"><i class="fa-solid fa-user-crown"></i> <i18n text="Client Area"></i18n></button>
+            <button onclick="toggleSPControls(); toTab('web-panel', this, 'var(--accent)');" class="sidebar-tab"><i class="fa-solid fa-cloud"></i> <i18n text="Web Panel"></i18n></button>
+            <button onclick="toggleSPControls(); toTab('game-panel', this, 'var(--accent)');" class="sidebar-tab"><i class="fa-solid fa-gamepad-modern"></i> <i18n text="Game Panel"></i18n></button>
+            <button onclick="toggleSPControls(); toTab('vps-panel', this, 'var(--accent)');" class="sidebar-tab"><i class="fa-solid fa-server"></i> <i18n text="VPS Panel"></i18n></button>
         </div>
         <div class="sidebar-bottom">
             <button onclick="toggleFCControls(); toTab('forums', this, 'var(--accent)');" class="sidebar-tab"><i class="fa-light fa-users"></i> <i18n text="Forums"></i18n></button>

@@ -41,18 +41,24 @@
             </div>
         </modal>
         <content>
-            <div add-component="./components/views/dashboard.html"></div>
+           <!-- <div add-component="./components/views/dashboard.html"></div>-->
             <div id="client-area" class="content">
-                <webview class="full-window" id="web-client-area" src="https://client.falixnodes.net/" preload="./base/js/webview/client.js"></webview>
+                <webview class="full-window" id="web-client-area" src="https://customers.sideria.fr/" preload="./base/js/webview/client.js"></webview>
             </div>
-            <div id="servers-panel" class="content">
-                <webview class="full-window" id="web-servers-panel" src="https://dev-panel.falixnodes.net/" preload="./base/js/webview/panel.js"></webview>
+            <div id="web-panel" class="content">
+                <webview class="full-window" id="web-servers-panel" src="https://web.sideria.fr:8090/" preload="./base/js/webview/panel.js"></webview>
+            <div id="game-panel" class="content">
+                <webview class="full-window" id="web-servers-panel" src="https://game.sideria.fr" preload="./base/js/webview/panel.js"></webview>
+            </div>
+            <div id="vps-panel" class="content">
+                <webview class="full-window" id="web-servers-panel" src="https://vps.sideria.fr" preload="./base/js/webview/panel.js"></webview>
+            </div>
             </div>
             <div id="forums" class="content">
-                <webview class="full-window" id="web-forums" src="https://forum.falixnodes.net/"></webview>
+                <webview class="full-window" id="web-forums" src="#"></webview>
             </div>
             <div id="help-center" class="content">
-                <webview class="full-window" id="web-help-center" src="https://falixnodes.net/help/"></webview>
+                <webview class="full-window" id="web-help-center" src="#"></webview>
             </div>
         </content>
     </body>
