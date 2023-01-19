@@ -1,10 +1,10 @@
 var url = window.location.href;
-if(url == "https://customers.sideria.fr/"
-|| url == "https://customers.sideria.fr/"
+if(url == "https://sideria.fr/desktop/"
+|| url == "https://sideria.fr/desktop/"
 || url.startsWith("https://accounts.google.com/")
-|| url == "https://customers.sideria.fr/"
+|| url == "https://sideria.fr/desktop/"
 || url == "")
-{} else {setTimeout(() => {location.href = 'https://customers.sideria.fr/'}, 0500);}
+{} else {setTimeout(() => {location.href = 'https://sideria.fr/desktop/'}, 0500);}
 
 setTimeout(() => {
     var styles = `
